@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d0ei4njyn42d8"]
+
+[ext_resource type="Script" uid="uid://mc7sr82o0ar1" path="res://scenes/main/main.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/levels/praca_central.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialog_box.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/pause_menu.tscn" id="4"]
+
+[node name="Main" type="Node" unique_id=1545133824]
+script = ExtResource("1")
+
+[node name="CurrentLevel" parent="." unique_id=322331904 instance=ExtResource("2")]
+position = Vector2(346, 179)
+
+[node name="DialogBox" parent="." unique_id=1424550077 instance=ExtResource("3")]
+
+[node name="PauseMenu" parent="." unique_id=493072997 instance=ExtResource("4")]

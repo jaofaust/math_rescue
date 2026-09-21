@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PuzzleData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/puzzle_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+puzzle_id = "porta_unidades"
+context_text = "A porta do prédio central tem um painel digital. Ele mostra: 'ACESSO BLOQUEADO — Insira a medida correta em CENTÍMETROS.' Uma placa ao lado diz: 'Altura mínima de segurança: 2 metros.'"
+question = "Quanto é 2 metros em centímetros?"
+options = PackedStringArray("20 cm", "200 cm", "2000 cm", "0.02 cm")
+correct_index = 1
+hint_concept = "1 metro tem 100 centímetros."
+hint_clue = "Olha a placa ao lado da porta. Ela diz a medida em metros."
+hint_reasoning = "Se 1 metro = 100 centímetros, então 2 metros = 2 × 100 = ?"
+success_message = "A porta destrancou!"
+energy_reward = 0.5

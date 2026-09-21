@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PuzzleData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/puzzle_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+puzzle_id = "receita_proporcao"
+context_text = "A máquina de suco está descalibrada. A receita original é para 4 pessoas e usa 2 litros de suco concentrado. Precisamos preparar a receita para 8 pessoas."
+question = "Quantos litros de suco a máquina precisa para 8 pessoas?"
+options = PackedStringArray("3 litros", "4 litros", "6 litros")
+correct_index = 1
+hint_concept = "Se a receita é para 4 pessoas e queremos para 8, precisamos dobrar a quantidade."
+hint_clue = "A receita na parede mostra que usamos 2 litros para 4 pessoas."
+hint_reasoning = "8 pessoas é o dobro de 4. Logo, a quantidade de suco também deve dobrar: 2 × 2 = ?"
+success_message = "A máquina de suco foi calibrada com sucesso!"
+energy_reward = 0.5
